@@ -1,0 +1,118 @@
+.signInContainer {
+  height: 100vh;
+  background: var(--blue);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.25rem;
+  align-content: center;
+}
+
+.signInContainer > img {
+  width: 100%;
+  max-width: 800px;
+}
+
+@media(max-width: 800px) {
+  .signInContainer > img {
+    display: none;
+  }
+}
+
+@media(max-width: 800px) {
+  .signInContainer {
+    grid-template-columns: none;
+    justify-content: center;
+  }
+}
+
+.formContainer {
+  display: flex;  
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 450px;
+  padding: 1.5rem;
+
+  /* background: red; */
+}
+
+.formContainer > img {
+  margin-bottom: 6rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.formContainer > span {
+  font-size: 2.25rem;
+  color: var(--white);
+  font-weight: 600;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+.formContainer > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.25rem;
+}
+
+.formContainer > div > span {
+  font-size: 1.25rem;
+  color: var(--text-highlight);
+  margin-left: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.formContainer form {
+  display: flex;
+  height: 80px;
+  width: 100%;
+}
+
+.formContainer form > input {
+  background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+
+  padding: 1.5rem 1.87rem;
+  font-size: 1.25rem;
+
+  color: var(--white);
+  border: 2px solid transparent;
+  outline: none;
+  flex: 1;
+
+  transition: border-color 0.2s;
+}
+
+.formContainer form > input::placeholder {
+  color: var(--text-highlight)
+}
+
+.formContainer form > input:hover, 
+.formContainer form > input:focus { 
+  border: 2px solid #414AA3;
+}
+
+.formContainer form > button {
+  background: var(--blue-dark);
+  border: none;
+  flex: 1;
+  max-width: 80px;
+  border-radius: 0 5px 5px 0;
+  font-size: 0;
+
+  transition: filter 0.2s;
+}
+
+.formContainer form > button:hover {
+  filter: brightness(0.9);
+}
+
+.formContainer form > button.isValid {
+  background: var(--green);
+}
