@@ -1,5 +1,5 @@
 
-## PS: Apenas a parte visual da tela de login(ainda não functional)
+## PS: Apenas a parte visual da tela de login(ainda não funcional)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
